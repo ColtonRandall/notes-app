@@ -10,5 +10,5 @@ import lombok.NoArgsConstructor;
 public class Note {
     private String title;
     private String content;
-    private int id;
+    private String id;
 }
