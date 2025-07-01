@@ -1,6 +1,6 @@
-HELP.md
-target/
-.mvn/wrapper/maven-wrapper.jar
+/backend/HELP.md
+/backend/target/
+/backend/.mvn/wrapper/maven-wrapper.jar
 !**/src/main/**/target/
 !**/src/test/**/target/
 
@@ -22,10 +22,10 @@ target/
 ### NetBeans ###
 /nbproject/private/
 /nbbuild/
-/dist/
-/nbdist/
+/backend/dist/
+/backend/nbdist/
 /.nb-gradle/
-build/
+/backend/build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
