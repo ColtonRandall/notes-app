@@ -12,13 +12,30 @@ function App() {
 
   return (
     <div>
-      <h1>Notes</h1>
+      <h1
+        style={{ margin: "auto", textAlign: "center", paddingBottom: "5rem" }}
+      >
+        Notes
+      </h1>
       <ul>
         {notes.map((note) => (
-          <li key={note.id}>
-            <h2>{note.title}</h2>
-            <p>{note.content}</p>
-          </li>
+          <div
+            key={note.id}
+            style={{
+              background: "orange",
+              padding: "1rem",
+              marginBottom: "5rem",
+              borderRadius: "25px",
+              marginBottom: "5rem",
+              width: "50%",
+              textAlign: "center",
+            }}
+          >
+            <h2 style={{ margin: "auto", color: "black", textAlign: "center" }}>
+              {note.title}
+            </h2>
+            <p style={{ fontWeight: "500" }}>{note.content}</p>
+          </div>
         ))}
       </ul>
     </div>
