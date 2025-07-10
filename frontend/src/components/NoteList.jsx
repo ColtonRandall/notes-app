@@ -5,6 +5,10 @@ import "../styles/noteList.css";
 function NotesList() {
   const [notes, setNotes] = useState([]);
 
+  function handleDelete(id) {
+    setNotes((previousState) => previousState.filter((note) => note.id !== id));
+  }
+
   useEffect(() => {
     fetch("/api/notes")
       .then((response) => response.json())
@@ -15,7 +19,7 @@ function NotesList() {
   return (
     <ul className="notes-list">
       {notes.map((note) => (
-        <Note key={note.id} note={note} />
+        <Note key={note.id} note={note} onDelete={handleDelete} />
       ))}
     </ul>
   );
