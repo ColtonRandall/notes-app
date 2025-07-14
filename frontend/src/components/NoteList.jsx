@@ -1,28 +1,28 @@
-import { useEffect, useState } from "react";
-import Note from "./Note";
-import "../styles/noteList.css";
+import { Masonry } from "@mui/lab";
+import { Card, CardContent, Typography } from "@mui/material";
 
-function NotesList() {
-  const [notes, setNotes] = useState([]);
-
-  function handleDelete(id) {
-    setNotes((previousState) => previousState.filter((note) => note.id !== id));
-  }
-
-  useEffect(() => {
-    fetch("/api/notes")
-      .then((response) => response.json())
-      .then((data) => setNotes(data))
-      .catch((error) => console.error("Error loading notes:", error));
-  }, []);
-
+function NoteList({ notes }) {
   return (
-    <ul className="notes-list">
+    <Masonry columns={{ xs: 1, sm: 2, md: 3, lg: 4 }} spacing={2}>
       {notes.map((note) => (
-        <Note key={note.id} note={note} onDelete={handleDelete} />
+        <Card
+          key={note.id}
+          sx={{
+            borderRadius: 3,
+            backgroundColor: "#fff",
+            boxShadow: "0 4px 12px rgba(0, 0, 0, 0.08)",
+          }}
+        >
+          <CardContent>
+            <Typography variant="h6" gutterBottom>
+              {note.title}
+            </Typography>
+            <Typography>{note.content}</Typography>
+          </CardContent>
+        </Card>
       ))}
-    </ul>
+    </Masonry>
   );
 }
 
-export default NotesList;
+export default NoteList;

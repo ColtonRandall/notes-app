@@ -1,20 +1,24 @@
 .note {
-    background: orange;
-    padding: 1rem;
-    border-radius: 25px;
-    width: 100%;              /* Take full column width */
-    margin-bottom: 2rem;      /* Space between notes vertically */
-    box-sizing: border-box;
-    display: block;           /* Important for masonry columns */
-    break-inside: avoid;      /* Prevents notes from breaking between columns */
-  }
-  
-  .note-title {
-    margin: auto;
-    color: black;
-    text-align: center;
-  }
-  
-  .note-content {
-    font-weight: 500;
-  }
+  background: orange;
+  padding: 1rem;
+  border-radius: 20px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  display: block;
+  break-inside: avoid;
+  width: 100%;
+}
+
+.note-title {
+  margin: auto;
+  color: black;
+  text-align: center;
+}
+
+.note-content {
+  font-weight: 500;
+}
+
+button {
+  background-color: rgb(235, 111, 111);
+}

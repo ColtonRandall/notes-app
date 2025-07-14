@@ -1,0 +1,58 @@
+.note-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 12px;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  }
+  
+  .noteform-title {
+    padding: 0.8rem 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: border-color 0.2s ease;
+  }
+  
+  .noteform-title:focus {
+    border-color: #77dd77;
+  }
+  
+  .noteform-content {
+    min-height: 120px;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    outline: none;
+    resize: vertical;
+    transition: border-color 0.2s ease;
+  }
+  
+  .noteform-content:focus {
+    border-color: #77dd77;
+  }
+  
+  .note-submit {
+    align-self: flex-end;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background-color: #77dd77;
+    color: black;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  
+  .note-submit:hover {
+    background-color: #66cc66;
+  }

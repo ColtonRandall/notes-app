@@ -2,7 +2,7 @@ import "../styles/note.css";
 
 function Note({ note, onDelete }) {
   function handleDelete() {
-    fetch(`http://localhost:8080/api/notes/${note.id}`, {
+    fetch(`api/notes/${note.id}`, {
       method: "DELETE",
     })
       .then((response) => {

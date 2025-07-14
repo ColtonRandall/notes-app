@@ -1,21 +1,23 @@
 .notes-list {
-    column-count: 3;
+  .notes-list {
+    column-width: 250px;
     column-gap: 2rem;
-    padding: 0 2rem;
-    list-style: none;
+    padding: 2rem;
+    max-width: 1400px;
     margin: 0 auto;
-    max-width: 1200px;
+    text-align: center; /* ⬅️ center the columns themselves */
   }
-  
-  @media (max-width: 900px) {
-    .notes-list {
-      column-count: 2;
-    }
+}
+
+@media (max-width: 900px) {
+  .notes-list {
+    padding: 1rem;
   }
-  
-  @media (max-width: 600px) {
-    .notes-list {
-      column-count: 1;
-      padding: 0 1rem;
-    }
+}
+
+@media (max-width: 600px) {
+  .notes-list {
+    column-width: 100%;
+    padding: 0 1rem;
   }
+}
