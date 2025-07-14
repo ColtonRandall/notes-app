@@ -1,23 +1,27 @@
 .notes-list {
+  column-count: 4;           /* Number of columns on large screens */
+  column-gap: 1.5rem;        /* Gap between columns */
+  padding: 1rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1200px) {
   .notes-list {
-    column-width: 250px;
-    column-gap: 2rem;
-    padding: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    text-align: center; /* ⬅️ center the columns themselves */
+    column-count: 3;
   }
 }
 
 @media (max-width: 900px) {
   .notes-list {
+    column-count: 2;
     padding: 1rem;
   }
 }
 
 @media (max-width: 600px) {
   .notes-list {
-    column-width: 100%;
+    column-count: 1;        /* Single column on small screens */
     padding: 0 1rem;
   }
 }
