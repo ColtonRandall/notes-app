@@ -1,15 +1,9 @@
 .notes-list {
-  column-count: 4;           /* Number of columns on large screens */
+  column-count: 3;           /* Number of columns on large screens */
   column-gap: 1.5rem;        /* Gap between columns */
   padding: 1rem 2rem;
-  max-width: 1400px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-
-@media (max-width: 1200px) {
-  .notes-list {
-    column-count: 3;
-  }
 }
 
 @media (max-width: 900px) {

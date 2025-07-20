@@ -7,3 +7,8 @@ This is the frontend for the Notes App, built with [React](https://react.dev/) a
 - Create notes with a title and content
 - View all notes
 - Delete notes
+
+## Layout 
+
+Full screen:
+![](..)
