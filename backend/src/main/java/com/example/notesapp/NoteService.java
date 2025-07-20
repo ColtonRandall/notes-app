@@ -1,5 +1,6 @@
 package com.example.notesapp;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -37,8 +38,12 @@ public class NoteService {
      public Note createNote(Note note) {
          // Generate a unique ID for the note
          String id = UUID.randomUUID().toString();
+
+         // Generate a timestamp for the note
+         LocalDateTime timeStamp = LocalDateTime.now();
+
          // Create a new note with the provided title and content
-         Note newNote = new Note(note.getTitle(), note.getContent(), id);
+         Note newNote = new Note(note.getTitle(), note.getContent(), id, timeStamp);
          // Add the new note to the list
          notes.add(newNote);
          System.out.println("Note created: " + newNote.getId());

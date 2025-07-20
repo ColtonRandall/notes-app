@@ -1,12 +1,19 @@
 .note {
   background: orange;
   padding: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   border-radius: 20px;
   box-sizing: border-box;
   margin-bottom: 1rem;
   display: block;
   break-inside: avoid;
   width: 100%;
+}
+
+.noteDate {
+  text-align: center;
+  color: black;
 }
 
 .note-title {
@@ -17,8 +24,24 @@
 
 .note-content {
   font-weight: 500;
+  color: black;
+  padding: auto;
 }
 
-button {
-  background-color: rgb(235, 111, 111);
+.noteButtons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.deleteButton {
+  background-color: #dc3545;
+}
+
+.updateButton {
+  background-color: #007bff;
+}
+
+.saveButton {
+  background-color: #77dd77;
+  color: black
 }

@@ -29,17 +29,25 @@ function Note({ note, onDelete, onUpdate }) {
   return isUpdating ? (
     <li key={note.id} className="note">
       <h2 className="note-title">{note.title}</h2>
-      <button onClick={deleteNote}>x</button>
       <p className="note-content">{note.content}</p>
       <textarea value={content} onChange={(e) => setContent(e.target.value)} />
-      <button onClick={handleUpdate}>Save</button>
+      <button className="saveButton" onClick={handleUpdate}>
+        Save
+      </button>
     </li>
   ) : (
     <li key={note.id} className="note">
+      <p className="noteDate">{new Date(note.timeStamp).toLocaleString()}</p>
       <h2 className="note-title">{note.title}</h2>
-      <button onClick={deleteNote}>x</button>
       <p className="note-content">{content}</p>
-      <button onClick={() => setIsUpdating(true)}>update note</button>
+      <div className="noteButtons">
+        <button className="deleteButton" onClick={deleteNote}>
+          Delete
+        </button>
+        <button className="updateButton" onClick={() => setIsUpdating(true)}>
+          Update
+        </button>
+      </div>
     </li>
   );
 }
