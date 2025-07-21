@@ -27,6 +27,8 @@ body {
   min-height: 100vh;
   color: rgba(255, 255, 255, 0.87);
   background-color: var(--bg);
+  font-family: "Avenir", "Segoe UI", "Helvetica Neue", sans-serif;
+
   color: var(--text);
   transition: background-color 0.3s, color 0.3s;
 }

@@ -3,13 +3,14 @@ import { createContext, useContext, useEffect, useState } from "react";
 const ThemeContext = createContext();
 
 export const ThemeProvider = ({ children }) => {
+
   const getPreferredTheme = () => {
     const stored = localStorage.getItem("theme");
     if (stored) return stored;
-    const systemPrefersDark = window.matchMedia(
+    const defaultThemeDark = window.matchMedia(
       "(prefers-color-scheme: dark)"
     ).matches;
-    return systemPrefersDark ? "dark" : "light";
+    return defaultThemeDark ? "dark" : "light";
   };
 
   const [theme, setTheme] = useState(getPreferredTheme);

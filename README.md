@@ -18,20 +18,29 @@ The idea was to build a structure similar to [Google Keep](https://keep.google.c
 
 ## Layout
 
-Full screen:
-![](./frontend/public/images/note-desktop.png)
+Full screen (dark):
+![](./frontend/public/images/note-desktop-dark.png)
 
-Tablet:
-![](./frontend/public/images/note-tablet.png)
+Full screen (light):
+![](./frontend/public/images/note-desktop-light.png)
 
-Mobile:
-![](./frontend/public/images/note-mobile.png)
+Tablet (dark):
+![](./frontend/public/images/note-tablet-dark.png)
 
-## Roadmap 
+Tablet (light):
+![](./frontend/public/images/note-tablet-light.png)
+
+Mobile (dark):
+![](./frontend/public/images/note-mobile-dark.png)
+
+Mobile (light):
+![](./frontend/public/images/note-mobile-light.png)
+
+## Roadmap
 
 - [x] Basic CRUD operations
 - [x] Add note creation timestamps
-- [ ] Dark mode toggle
+- [x] Dark mode toggle
 - [ ] Unit tests (JUnit - backend, Jest - frontend)
 - [ ] Store note data in database
 - [ ] Deploy to AWS

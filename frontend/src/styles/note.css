@@ -25,7 +25,7 @@
 .note-content {
   font-weight: 500;
   color: black;
-  padding: auto;
+  padding: 1.5rem;
 }
 
 .noteButtons {
@@ -43,5 +43,18 @@
 
 .saveButton {
   background-color: #77dd77;
-  color: black
+  color: black;
+}
+
+.update-note-content {
+  display: flex;
+  margin: 2rem auto;
+  color: black;
+  font-size: 16px;
+  padding: 2rem;
+  border-radius: 12px;
+  border: 2px solid black;
+  background-color: #bfc6c7e8;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  resize: vertical;
 }

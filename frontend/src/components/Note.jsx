@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import "../styles/note.css";
 
 function Note({ note, onDelete, onUpdate }) {
@@ -28,9 +28,14 @@ function Note({ note, onDelete, onUpdate }) {
 
   return isUpdating ? (
     <li key={note.id} className="note">
+      <p className="noteDate">{new Date(note.timeStamp).toLocaleString()}</p>
       <h2 className="note-title">{note.title}</h2>
       <p className="note-content">{note.content}</p>
-      <textarea value={content} onChange={(e) => setContent(e.target.value)} />
+      <textarea
+        className="update-note-content"
+        value={content}
+        onChange={(e) => setContent(e.target.value)}
+      />
       <button className="saveButton" onClick={handleUpdate}>
         Save
       </button>

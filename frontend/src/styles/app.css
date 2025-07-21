@@ -4,5 +4,12 @@
 
 .app-title {
   text-align: center;
-  padding: 5rem;
+  font-size: 5rem;
+  font-weight: 500;
+  font: aviner;
+}
+
+hr {
+  margin-bottom: 4rem;
+  width: 90%;
 }
