@@ -1,4 +1,6 @@
 :root {
+  --bg: #f0f0eb;
+  --text: #000;
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -14,11 +16,19 @@
   box-sizing: border-box;
 }
 
+.dark {
+  --bg: #121212;
+  --text: #e0e0e0;
+}
+
 body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
   color: rgba(255, 255, 255, 0.87);
+  background-color: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s, color 0.3s;
 }
 
 a {
@@ -54,7 +64,7 @@ button:focus-visible {
 
 @media (prefers-color-scheme: light) {
   :root {
-    background-color:rgb(172, 192, 222);
+    background-color: rgb(172, 192, 222);
   }
 
   body {

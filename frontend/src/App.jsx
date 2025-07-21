@@ -2,6 +2,7 @@ import "./styles/app.css";
 import NotesList from "./components/NoteList";
 import NoteForm from "./components/NoteForm";
 import { useState, useEffect } from "react";
+import ThemeToggle from "./components/ThemeToggle";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -15,6 +16,7 @@ function App() {
 
   return (
     <div className="app-container">
+      <ThemeToggle />
       <h1 className="app-title">Notes</h1>
       <NoteForm setNotes={setNotes} />
       <NotesList notes={notes} setNotes={setNotes} />
