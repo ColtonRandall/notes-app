@@ -1,20 +1,25 @@
 # Notes App 📝
 
-A full-stack Java/Spring Boot + React notes app where you can create, view, delete personal notes.
+![](./frontend/public/gif/notesApp.gif)
 
-The idea was to build a structure similar to [Google Keep](https://keep.google.com), with a Mason Jar layout where notes stack on top of each other to fill the whitespace created by larger notes.
+A full-stack notes application built with Java 24 & Spring Boot (backend) and React + Vite (frontend).
+Easily create, view, update, and delete personal notes with a clean, responsive UI inspired by Google Keep. Notes are arranged in a Mason Jar layout, dynamically stacking to utilize whitespace efficiently.
+
 
 ## Stack
 
-- [Backend](https://github.com/ColtonRandall/notes-app/tree/main/backend): Java 24 + Spring Boot
-- [Frontend](https://github.com/ColtonRandall/notes-app/tree/main/frontend): React + Vite
+- Backend: Java 24 + Spring Boot
+- Frontend: React + Vite
+- [Backend source code](https://github.com/ColtonRandall/notes-app/tree/main/backend)
+- [Frontend source code](https://github.com/ColtonRandall/notes-app/tree/main/frontend)
 
 ## Features
 
-- Create notes with a title and content
-- View all notes
-- Delete a note
-- Update an existing note
+- Create notes with a title and rich content
+- View all existing notes in a Mason Jar layout
+- Update existing notes seamlessly
+- Delete unwanted notes
+- Persistent data storage to retain notes after page reloads
 
 ## Layout
 
